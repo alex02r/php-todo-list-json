@@ -19,8 +19,9 @@
             <div class="row justify-content-center">
                 <div class="col-8">
                     <ul class="list-unstyled">
-                        <li v-for="item, index in todoList " :key="index" class="py-3">
+                        <li v-for="item, index in todoList " :key="index" class="d-flex align-items-center justify-content-between py-3">
                             <h5 :class="item.do ? 'text-decoration-line-through' : '' " role="button" @click="doTask(index)">{{ item.name }}</h5>
+                            <i class="fas fa-trash-can" @click="deleteTask(index)"></i>
                         </li>
                     </ul>
                 </div>
