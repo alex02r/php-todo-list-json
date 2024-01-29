@@ -5,6 +5,7 @@ createApp({
         return {
             API_url: 'server.php',
             newItem:'',
+            edit: false,
             todoList:[]
         }
     },

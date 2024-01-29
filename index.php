@@ -22,12 +22,15 @@
                         <input type="text" class="form-control" placeholder="Aggiungi una task.." @keyup.enter="AddTask()" v-model="newItem">
                         <span class="input-group-text btn btn-dark" @click="AddTask()">Aggiungi</span>
                     </div>
+                    <div class="btn btn-warning float-end" @click="edit = !edit">
+                        <i :class="!edit ? 'fas fa-pen' : 'fas fa-check'"></i>
+                    </div>
                 </div>
                 <div class="col-8">
                     <ul class="list-unstyled">
-                        <li v-for="item, index in todoList " :key="index" class="d-flex align-items-center justify-content-between py-3">
+                        <li v-for="item, index in todoList " :key="index" class="d-flex align-items-center justify-content-between border-bottom py-3">
                             <h5 :class="item.do ? 'text-decoration-line-through' : '' " role="button" @click="doTask(index)">{{ item.name }}</h5>
-                            <i class="fas fa-trash-can" @click="deleteTask(index)"></i>
+                            <i v-if="edit" class="fas fa-trash-can text-danger" @click="deleteTask(index)"></i>
                         </li>
                     </ul>
                 </div>
