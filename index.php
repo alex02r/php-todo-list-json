@@ -18,6 +18,12 @@
         <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-8">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Aggiungi una task.." @keyup.enter="AddTask()">
+                        <span class="input-group-text btn btn-dark" @click="AddTask()">Aggiungi</span>
+                    </div>
+                </div>
+                <div class="col-8">
                     <ul class="list-unstyled">
                         <li v-for="item, index in todoList " :key="index" class="d-flex align-items-center justify-content-between py-3">
                             <h5 :class="item.do ? 'text-decoration-line-through' : '' " role="button" @click="doTask(index)">{{ item.name }}</h5>
