@@ -11,7 +11,18 @@
 </head>
 <body>
     <div id="app">
-
+        <header class="bg-dark p-3">
+            <h1 class="text-white">Todo List</h1>
+        </header>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <ul class="list-unstyled">
+                        <li>ciao</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="./script.js"></script>
 </body>
