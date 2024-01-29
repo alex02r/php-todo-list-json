@@ -1,5 +1,5 @@
 <?php 
-    $list = 'prova';
+    $list = file_get_contents('./todo.json');
 
     header('Content-Type: application/json');
 
