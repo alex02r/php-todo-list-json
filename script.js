@@ -25,6 +25,7 @@ createApp({
             axios.post(this.API_url, data, {
                 headers: { 'Content-Type':'multipart/form-data'}
             }).then(response =>{
+                this.newItem = ''
                 this.todoList = response.data
                 this.getTodoList()
             })
