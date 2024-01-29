@@ -11,5 +11,14 @@
         file_put_contents('./todo.json', $newList);
     }
 
+    if (isset($_POST['delete_item'])) {
+        $data = json_decode($list, true);
+
+        unset($data[$_POST['delete_item']]);
+        
+        $newList = json_encode($data, true);
+        file_put_contents('./todo.json', $newList);
+    }
+
     echo $list;
 ?>
