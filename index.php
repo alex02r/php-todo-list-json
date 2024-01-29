@@ -18,12 +18,14 @@
         <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-8">
-                    <div class="input-group mb-3 shadow">
-                        <input type="text" class="form-control" placeholder="Aggiungi una task.." @keyup.enter="AddTask()" v-model="newItem">
-                        <span class="input-group-text btn btn-dark" @click="AddTask()">Aggiungi</span>
-                    </div>
-                    <div class="btn btn-warning mb-3" @click="edit = !edit">
-                        <i :class="!edit ? 'fas fa-pen' : 'fas fa-check'"></i>
+                    <div class="d-flex gap-3">
+                        <div class="input-group mb-3 shadow">
+                            <input type="text" class="form-control" placeholder="Aggiungi una task.." @keyup.enter="AddTask()" v-model="newItem">
+                            <span class="input-group-text btn btn-dark" @click="AddTask()">Aggiungi</span>
+                        </div>
+                        <div class="btn btn-warning mb-3" @click="edit = !edit">
+                            <i :class="!edit ? 'fas fa-pen' : 'fas fa-check'"></i>
+                        </div>
                     </div>
                     <div class="bg-white rounded shadow p-3">
                         <ul class="list-unstyled">
