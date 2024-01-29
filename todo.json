@@ -13,6 +13,6 @@
     },
     {
         "name" : "Mangiare la pizza",
-        "do" : false
+        "do" : true
     }
 ]
