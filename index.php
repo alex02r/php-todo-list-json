@@ -17,7 +17,7 @@
         </header>
         <div class="container my-5">
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-10 col-md-8">
                     <div class="d-flex gap-3">
                         <div class="input-group mb-3 shadow">
                             <input type="text" class="form-control" placeholder="Aggiungi una task.." @keyup.enter="AddTask()" v-model="newItem">
