@@ -18,7 +18,7 @@
             <div class="row justify-content-center">
                 <div class="col-8">
                     <ul class="list-unstyled">
-                        <li>ciao</li>
+                        <li v-for="item, index in todoList " :key="index">{{ item }}</li>
                     </ul>
                 </div>
             </div>
