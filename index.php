@@ -19,7 +19,7 @@
             <div class="row justify-content-center">
                 <div class="col-8">
                     <ul class="list-unstyled">
-                        <li v-for="item, index in todoList " :key="index">{{ item }}</li>
+                        <li v-for="item, index in todoList " :key="index" class="py-3">{{ item.name }}</li>
                     </ul>
                 </div>
             </div>

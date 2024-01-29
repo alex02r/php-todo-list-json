@@ -1,1 +1,18 @@
-["fare la spesa", "lavare i piatti", "creare una webapp", "mangiare la pizza"]
+[
+    {
+        "name" : "fare la spesa",
+        "do" : false
+    },
+    {
+        "name" : "lavare i piatti",
+        "do" : false
+    },
+    {
+        "name" : "creare una webapp",
+        "do": false
+    },
+    {
+        "name" : "Mangiare la pizza",
+        "do" : false
+    }
+]
