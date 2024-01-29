@@ -20,7 +20,7 @@
                 <div class="col-8">
                     <ul class="list-unstyled">
                         <li v-for="item, index in todoList " :key="index" class="py-3">
-                            <h5 :class="item.do ? 'text-decoration-line-through' : '' ">{{ item.name }}</h5>
+                            <h5 :class="item.do ? 'text-decoration-line-through' : '' " role="button" @click="doTask(index)">{{ item.name }}</h5>
                         </li>
                     </ul>
                 </div>
