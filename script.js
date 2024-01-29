@@ -7,9 +7,12 @@ createApp({
             todoList:[]
         }
     },
+    created() {
+        this.getTodoList()
+    },
     methods: {
         getTodoList(){
-            axios.get(API_url).then(response =>{
+            axios.get(this.API_url).then(response =>{
                 this.todoList = response.data;
             })
         }
