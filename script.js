@@ -25,6 +25,7 @@ createApp({
                 headers: { 'Content-Type':'multipart/form-data'}
             }).then(response =>{
                 this.todoList = response.data
+                this.getTodoList()
             })
         }
     },

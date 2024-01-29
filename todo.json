@@ -1,18 +1,1 @@
-[
-    {
-        "name" : "fare la spesa",
-        "do" : false
-    },
-    {
-        "name" : "lavare i piatti",
-        "do" : false
-    },
-    {
-        "name" : "creare una webapp",
-        "do": false
-    },
-    {
-        "name" : "Mangiare la pizza",
-        "do" : true
-    }
-]
+[{"name":"fare la spesa","do":false},{"name":"lavare i piatti","do":false},{"name":"creare una webapp","do":false},{"name":"Mangiare la pizza","do":true}]
