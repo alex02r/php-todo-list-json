@@ -27,6 +27,17 @@ createApp({
                 this.todoList = response.data
                 this.getTodoList()
             })
+        },
+        deleteTask(i){
+            const data = {
+                delete_item : i
+            }
+            axios.post(this.API_url, data, {
+                headers: { 'Content-Type':'multipart/form-data'}
+            }).then(response =>{
+                this.todoList = response.data
+                this.getTodoList()
+            })
         }
     },
 }).mount('#app')
