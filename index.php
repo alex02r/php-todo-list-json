@@ -19,7 +19,7 @@
             <div class="row justify-content-center">
                 <div class="col-8">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Aggiungi una task.." @keyup.enter="AddTask()">
+                        <input type="text" class="form-control" placeholder="Aggiungi una task.." @keyup.enter="AddTask()" v-model="newItem">
                         <span class="input-group-text btn btn-dark" @click="AddTask()">Aggiungi</span>
                     </div>
                 </div>
