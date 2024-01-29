@@ -3,10 +3,15 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            todoList:[ 'ciao', 'ciao', 'ciao']
+            API_url: 'server.php',
+            todoList:[]
         }
     },
     methods: {
-        
+        getTodoList(){
+            axios.get(API_url).then(response =>{
+                this.todoList = response.data;
+            })
+        }
     },
 }).mount('#app')
